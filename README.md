@@ -9,8 +9,8 @@ JavaScript frameworks and libraries include: React, Angular and View.
 
 Therefore,
 
-**HTML** - responsible for the content of the page (text, images and buttons on the web site.)
+**HTML** - Is used to structure a web page and its contents(text, images and buttons on the web site.)
 
-**CSS** - responsible for styling of the content on the web page.
+**CSS** - Is responsible for styling of the content on the web page.
 
-**JavaScript** - adds responsiveness and dynamics to the web page.
+**JavaScript** - Allows us to implement complex features and add dynamics to the web page.
