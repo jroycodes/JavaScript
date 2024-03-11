@@ -95,3 +95,133 @@ console.log(Number(inputYear) + 18);
  **To change a number into a string, we use the “String” function.**
 
 Type Coercion: Is when JavaScript automatically converts from one type to another behind the scenes. In JavaScript, the plus operator (+) triggers a Coercion of strings. (From numbers to strings). While the minus operator (-) triggers a Coercion of numbers.(From strings to numbers).
+
+ **To change a number into a string, we use the “String” function.**
+
+Type Coercion: Is when JavaScript automatically converts from one type to another behind the scenes. In JavaScript, the plus operator (+) triggers a Coercion of strings. (From numbers to strings). While the minus operator (-) triggers a Coercion of numbers.(From strings to numbers).
+
+# Operators 
+An operator basically allows us to transform values or combine multiple values. 
+
+***Mathematical operators***
+
+With mathematical operators, we can do all sorts of arithmetic operations like addition, subtraction, division and multiplication.
+
+```jsx
+// Addition (**+**)
+40 + 50 + 100;
+= 190.
+```
+
+***The addition operator or the plus operator (+) can also be used to add strings (text).***
+
+```jsx
+const firstName = 'Jonathan';
+const lastName = 'Roy';
+(firstName + lastName);
+```
+
+```jsx
+//Subtraction (**-**)
+100 - 50 - 40;
+= 10.
+// Subtraction
+const ageJonas = 2037 - 1991;
+= 46
+```
+
+```jsx
+//Multiplication (*****)
+const ageJonas = 19;
+ageJonas * 2;
+```
+
+```jsx
+//Division (**/**)
+const ageJonas = 19;
+ageJonas * 2;
+```
+
+**Remainder operato**r (%) Gives the remainder of the division of two numbers.
+
+```css
+314 % 100
+// 14 (modulo)
+```
+
+- ***Assignment Operators***
+
+    ***Equal sign. (=)*** Besides being a mathematical operator, the equal sign is alos an assignment operator. When used, it assigns the totall of the values on the right after it to the value on the left.
+
+    ```jsx
+    let x = 10 + 5;
+    x = 15
+    //the assignment operator assigned the total of the value on the right(15) into the value on the left....hence x = 15. 
+    ```
+
+    ***Plus Equal (+=).*** This one is used when for example the first value of x = 15 then the second value is 10 to add the two values in avariable. 
+
+    ```jsx
+    let x = 10 + 5; // 15
+    x += 10; // x = x + 10 = 25
+    ```
+
+    ***Multiplication & Equal (*=).***  This means that when the initial value of x is 15 and the second value of x is 4 then you multiply them with each other.
+
+    ***Plus Plus (++).*** With this operator, 1 is added to the initial value of X everytime ***(++)*** is used.
+
+    ```jsx
+    let x = 10 + 5;
+    x += 10; // x = x + 10 = 25
+    x *= 4; // x = x * 4
+    x++; // x = x + 1 = 101
+    ```
+
+    ***Minus Minus (- -).*** With this operator, 1 is removed from the initial value of X everytime ***(- -)*** is used.
+
+    ```jsx
+    let x = 10 + 5;
+    x += 10; // x = x + 10 = 25
+    x *= 4; // x = x * 4
+    x++; // x = x + 1 = 101
+    x--: // x = x - 1 = 100
+    ```
+
+    ```jsx
+    let x = 10 + 5; // 15
+    x *= 4; // x = x * 4 = 60
+    ```
+
+- ***Comparison Operators:*** These are used to produce boolean values.
+
+
+    **Strict Equality operator. ( ===).** *Operator used for comparing values**.***
+
+    **The inequality operator** (`!=`) It means not equal and returns `false`where equality would return `true`and *vice versa.* 
+
+    The strict inequality operator (`!==`)   is the logical opposite of the strict equality operator. It means "*Strictly Not Equal*" and returns `false`where strict equality would return `true`and *vice versa.*                                  
+
+    **(>) Greater than.**
+
+    **(<) Less than.**
+
+    **(<=) Less than or Equal to** 
+
+    **(>=) Greater than or Equal to** 
+
+
+***Logical operators.***
+
+We use **Boolean Logic** when solving complex logical problems in JS. We then use operators like: ‘’And’’, ‘’Or’’ and ‘’Not’’. 
+
+**Syntax.**
+
+- **And (&&)**
+- **Or ( || )**
+- **Not (!)**
+
+**Unary Operators**
+
+These take one value. 
+
+- **typeof** operator : which produces a string value naming the type of the value you give it.
