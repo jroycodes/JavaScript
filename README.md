@@ -470,3 +470,41 @@ Matilda
     💡 **************“let”************** *****is on*****
 
     </aside>
+ **Scoping**
+**Scoping** : Scoping controls how variables in a program are organized and accessed in the JS engine. 
+
+**Lexical scoping** : Is controlled by placement of functions and blocks in the code.
+
+**Scope** : Environment in which a certain variable is declared. There is the **global** scope, **function** scope and the **block** scope.
+
+**Scope of a variable** : Region of code where a certain variable can be accessed.
+
+| Global Scope  | Function Scope | Block Scope |
+| --- | --- | --- |
+| Variables declared are accessible everywhere. | Variables are accessible only inside function {var} | Variables are accessible only inside block(block scoped) |
+| Outside of any function or block  | Also called local scope  | Only applies to let and const variables |
+
+**Global scope** 
+
+Variables which are **defined outside** of a function block have *Global* scope
+
+**Local scope / Function scope** 
+
+Variables which are declared within a function, that means they  are accessible anywhere inside of the function they are defined.
+
+**Block scope** 
+
+The behavior of a variable to only be accessible inside the block it was defined.
+
+**Variable Lookup in scope chain.**
+
+This means variables (child elements) have access to all outer scopes or variables and functions declared before them.
+
+<aside>
+📌 Each function declaration creates a new scope.
+
+</aside>
+
+**Hoisting**
+
+Is the process by which the JavaScript engine moves variable declarations to the top of their scope, allocating memory to them before reaching the line of code here they are declared.
