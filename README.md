@@ -390,3 +390,83 @@ Matilda
 Matilda
 //So by changing the value in the variable, it applies the changes in all the places where the variable is mentioned.
 ```
+ **LET, CONST & VAR.**
+
+    ***LET***
+
+    We us the *“**let**”* keyword to declare variables that will change later.( Mutating variable.) 
+
+    ```jsx
+    // variable declaration with "**let**"
+    let age = 19;
+    //Values in variables made with "let" can be changed/mutated
+    age = 31;
+
+    ```
+
+    ***CONST***
+
+    We use the “**const**’’ keyword to declare variables that will not change throughout the program. The values in a “**const**” variable are not supposed to be changed. When using “**const**”, we can not declare null or empty variables.
+
+    ```jsx
+    //Variables declared with "const" do not cha   n ge. (They are constant.)
+    const birthYear = 2003;
+    ```
+
+    ***VAR***
+
+    This is the oldest way of declaring variables in JavaScript. Like “**let**”, its also used to declare variables that will change later.
+
+    ```jsx
+    //Similar to "let"....NB: Not advisable to use this declaration method.
+    var job = 'Programmer';
+    job = 'Teacher';
+    ```
+
+    In JavaScript, when declaring a variable, syntactically we use the key word ***“let”.*** 
+
+    <aside>
+    💡 **************“let”************** *****is on*****
+
+    </aside>
+
+- **Scoping**
+- **LET, CONST & VAR.**
+
+    ***LET***
+
+    We us the *“**let**”* keyword to declare variables that will change later.( Mutating variable.) 
+
+    ```jsx
+    // variable declaration with "**let**"
+    let age = 19;
+    //Values in variables made with "let" can be changed/mutated
+    age = 31;
+
+    ```
+
+    ***CONST***
+
+    We use the “**const**’’ keyword to declare variables that will not change throughout the program. The values in a “**const**” variable are not supposed to be changed. When using “**const**”, we can not declare null or empty variables.
+
+    ```jsx
+    //Variables declared with "const" do not cha   n ge. (They are constant.)
+    const birthYear = 2003;
+    ```
+
+    ***VAR***
+
+    This is the oldest way of declaring variables in JavaScript. Like “**let**”, its also used to declare variables that will change later.
+
+    ```jsx
+    //Similar to "let"....NB: Not advisable to use this declaration method.
+    var job = 'Programmer';
+    job = 'Teacher';
+    ```
+
+    In JavaScript, when declaring a variable, syntactically we use the key word ***“let”.*** 
+
+    <aside>
+    💡 **************“let”************** *****is on*****
+
+    </aside>
