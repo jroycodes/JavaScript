@@ -338,3 +338,55 @@ These take one value.
         ```jsx
         padStart / padEnd(targetLength, padString)
         ```
+
+- **Variables and Scoping**
+**A** **value**: Is a pierce of data. The most fundamental unit of information in programming. Values can the be stored into variables. 
+
+```jsx
+console.log("Jonathan");
+//"Jonathan is the value in this line of code.
+```
+
+**A variable**: Is a container into which values of data are stored. Variables allow the user to reuse any saved values. 
+
+- **Conventions of writing(naming) variables.**
+    - Variable names do not start with numbers.
+
+        ```jsx
+        let 3years = 3;
+        //Syntax error
+        ```
+
+        - Variable names can only contain numbers, letters, underscore and the dollar sign.
+        - Variable names should not contain or fully be made of reserved words in JS eg: “function, name”.
+        - Variable names should not begin with capitalized letters. This might be done when dealing with Object Oriented JavaScript.’
+            - Variables that are all in upper case are reserved for constants that never change.
+        - Variable names should be descriptive. This makes it easier to keep clean code and make it easier to understand.
+
+        ```jsx
+        //descriptive variable name 
+        let myFirstJob = "Teacher";
+        let myCurrentJob = "Programmer";
+        ```
+
+
+```jsx
+let firstName = "Jonathan"
+// "firstName" is the variable.
+//let declares a variable in JavaScript.
+```
+
+Variables also allow makes it easy to change the values in a variable. Instead of changing the value one by one , it can be done in a single step by changing the value in the variable itself.
+
+```jsx
+let firstName = "Matilda"
+
+console.log(firstName);
+console.log(firstName);
+console.log(firstName);
+//Output:
+Matilda
+Matilda
+Matilda
+//So by changing the value in the variable, it applies the changes in all the places where the variable is mentioned.
+```
