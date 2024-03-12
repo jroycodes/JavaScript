@@ -225,3 +225,116 @@ We use **Boolean Logic** when solving complex logical problems in JS. We then us
 These take one value. 
 
 - **typeof** operator : which produces a string value naming the type of the value you give it.
+
+These take one value. 
+
+- **typeof** operator : which produces a string value naming the type of the value you give it.
+
+- **Strings**
+
+    A string is a sequence of characters. When writing strings, we put them in quotes at the beginning and at the end of a string.
+
+    ```jsx
+    const firstName = "Jonathan";
+    const secondName = "Roy";
+    ```
+
+    **Concatenating strings** 
+
+    We can use the addition or plus (+) operator to add two strings together. We can also use the plus equal(+=) operator.
+
+    ```jsx
+    let myStr = "This is the start. " + "This is the end.";
+    //or 
+    let myStr ="This is the start. ";
+    myStr += "This is the end."
+    // Concatenating strings with variables 
+    const nameOne = 'Jonathan';
+    const nameTwo = 'Roy';
+    const nameThree = 'Mugisha';
+    const strFullName =
+      ' I met a boy whose fullname was ' + nameOne + ' ' + nameTwo + ' ' + nameThree + '.';
+    ```
+
+    **Template Literals..( *Template string*)**
+
+    *Template literals allow us insert variables directly into the string. It allows us to assemble multiple pierces into a single string*.
+
+    ```jsx
+    //We use back tick **(``)** when using template literals or strings.
+    const jonathanNew = `I'm ${firstName} a ${year-birthYear} year old ${job};`
+    ```
+
+    ```jsx
+    (` String
+    multiple
+    lines`);
+    ```
+
+           Template literals allows us to write multiple line strings. **Back ticks** ( **``** ) can also be used to write regular normal strings.
+
+    ```jsx
+    (`just a normal regular string!!!!`);
+    ```
+
+    ***Bracket notation*** is a way to find a character at a specific index within a string.
+
+    ```jsx
+    // First letter in charles
+    const firstName = "Charles";
+    const firstLetter = firstName[0];
+
+    // Last letter...subtract 1 from the string's length
+    const firstName = Charles;
+    const lastLetterOfName = firstName[firstname.length - 1];
+
+    // Nth-to-Last Character in a String
+    const firstName = Charles;
+    const lastLetterOfName = firstName[firstname.length - 3];
+    ```
+
+    <aside>
+    ✏️ You can find the length of a `String`
+     value by writing `.length`
+     after the string variable or string literal.
+
+    </aside>
+
+    - **String Methods**
+
+        **Reversing strings** 
+
+        ```jsx
+        function reverse(s){
+            return s.split("").reverse().join("");
+        }
+        ```
+
+        **Trim**
+
+        The **`trim()`** method removes whitespace from both ends of this string.
+
+        **Length**
+
+        The **`length`** data property of a string value contains the length of the string.
+
+        **Replace**
+
+        The **`replace()`** method of string values returns a new string with one, some, or all matches of a `pattern` replaced by a `replacement`.
+
+        ```jsx
+        replace(pattern, replacement)
+        namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+        ```
+
+        ****ReplaceAll****
+
+        The **`replaceAll()`** method of `[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)` values returns a new string with all matches of a `pattern` replaced by a `replacement`.
+
+        ````````````````string.padStart````````````````
+
+        `string.padEnd`
+
+        ```jsx
+        padStart / padEnd(targetLength, padString)
+        ```
