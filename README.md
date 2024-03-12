@@ -505,6 +505,7 @@ This means variables (child elements) have access to all outer scopes or variabl
 
 </aside>
 
+
 **Hoisting**
 
 Is the process by which the JavaScript engine moves variable declarations to the top of their scope, allocating memory to them before reaching the line of code here they are declared.
