@@ -509,3 +509,76 @@ This means variables (child elements) have access to all outer scopes or variabl
 **Hoisting**
 
 Is the process by which the JavaScript engine moves variable declarations to the top of their scope, allocating memory to them before reaching the line of code here they are declared.
+
+
+- **IF Statement.**
+
+    The **If statement checks the condition and executes the block of code if the the condition is true.**
+
+    ```jsx
+    const age = 19;
+    if (age >= 18) { ("Sarah can start driving license 🚗🏎 ");
+    ```
+    
+    **Condition:** Is any code that returns a true or a false value.
+    
+    <aside>
+    🗣 Unlike the equality (==) operator, which attempts to convert both values being compared to a common type, the strict (===) equality operator does not perform a type conversion.
+    
+    </aside>
+    
+    **IF / Else Statement**
+    
+    ```jsx
+    const age = 15;
+    if (age >= 18) {
+        console.log("Sarah can start driving license 🚗🏎 ");
+    }
+    else {
+        const yearsLeft = 18 - age;
+        console.log(`Sarah is too young to drive. Wait another ${yearsLeft} years :))`);
+    }
+    ```
+    
+    The **If statement** checks the condition and executes the block of code if the the condition is true. ****If the condition is false then **the else** block is executed instead.
+    
+    - ✅**The Switch Statement.**
+        
+        The switch element allows us to select one of many code blocks to be executed. The values in the expression is compared to all the cases and is executed if there is a match otherwise the default block is executed. (default)
+        
+        ```jsx
+        switch(expression){
+        case x:
+        // code block
+        break;
+        case y:
+        // code block
+        break;
+        // code block
+        default:
+        // default statement
+        break;
+        }
+        ```
+        
+    
+    > *We can also add multiple inputs with the same output.*
+    > 
+    
+    ```jsx
+    let result = "";
+    switch (val) {
+      case 1:
+      case 2:
+      case 3:
+        result = "1, 2, or 3";
+        break;
+      case 4:
+        result = "4 alone";
+    }
+    ```
+    
+    <aside>
+    📌 🗣Better option to If else statements
+    
+    </aside>
