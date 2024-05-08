@@ -128,10 +128,9 @@ const power = function (num1, num2) {
 };
 
 // Factorial
-const factorial = function (num) {
-  if (num === 0 || num === 1) {
-    return 1;
-  } else {
-    return num * factorial(num - 1);
-  }
+const factorial = function (n) {
+  if (n >= 1) {
+    return n * factorial(n - 1);
+  } else return 1;
 };
+console.log(factorial(4));
