@@ -47,3 +47,50 @@ const productOfAllNums = arr.reduce((total, currentItem) => {
 });
 console.log(productOfAllNums);
 console.log(arr);
+
+// for loop
+const books = [
+  {
+    title: "Book",
+    author: "Name",
+  },
+  {
+    title: "Book2",
+    author: "Name2",
+  },
+];
+
+function getTheTitles(array) {
+  const titles = [];
+  for (let i = 0; i < array.length; i++) {
+    titles.push(array[i].title);
+  }
+  return titles;
+}
+console.log(getTheTitles(books));
+
+// Using .map
+const book = [
+  {
+    title: "Book1",
+    author: "Name",
+  },
+  {
+    title: "Book2",
+    author: "Name2",
+  },
+  {
+    title: "Book3",
+    author: "Name2",
+  },
+  {
+    title: "Book4",
+    author: "Name2",
+  },
+];
+
+function getTheTitles(array) {
+  return array.map((book) => book.title);
+}
+
+console.log(getTheTitles(book));
