@@ -94,3 +94,44 @@ function getTheTitles(array) {
 }
 
 console.log(getTheTitles(book));
+
+// CALCULATOR
+
+// Add
+const add = function (num1, num2) {
+  return num1 + num2;
+};
+
+// Subtract
+const subtract = function (num1, num2) {
+  return num1 - num2;
+};
+
+// Get the sum
+const sumOf = function (array) {
+  return array.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
+};
+
+// Multiplication
+const multiply = function (array) {
+  return array.reduce(
+    (accumulator, currentValue) => accumulator * currentValue
+  );
+};
+
+// Power
+const power = function (num1, num2) {
+  return Math.pow(num1, num2);
+};
+
+// Factorial
+const factorial = function (num) {
+  if (num === 0 || num === 1) {
+    return 1;
+  } else {
+    return num * factorial(num - 1);
+  }
+};
