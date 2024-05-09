@@ -137,8 +137,16 @@ console.log(factorial(4));
 
 // Fibonacci
 const fibonacci = function (n) {
-  if (n >= 3){
-    return fibonacci(n - 1 ) + fibonacci(n - 2);
-  } else return 1; 
+  if (n >= 3) {
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  } else return 1;
 };
 console.log(fibonacci(8));
+
+// Palindromes
+const palindrome = function (string) {
+  const cleanedString = string.toLowerCase().replace(/[^a-z0-9]/g, "");
+  console.log(cleanedString);
+  return cleanedString === cleanedString.split("").reverse().join("");
+};
+console.log(palindrome("nurses run"));
