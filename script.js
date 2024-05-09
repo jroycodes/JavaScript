@@ -150,3 +150,38 @@ const palindrome = function (string) {
   return cleanedString === cleanedString.split("").reverse().join("");
 };
 console.log(palindrome("nurses run"));
+
+// Find The Oldest
+const people = [
+  {
+    name: "Carly",
+    yearOfBirth: 1942,
+    yearOfDeath: 1970,
+  },
+  {
+    name: "Ray",
+    yearOfBirth: 1962,
+    yearOfDeath: 2011,
+  },
+  {
+    name: "Jane",
+    yearOfBirth: 1912,
+    yearOfDeath: 1941,
+  },
+];
+
+const findTheOldest = function (array) {
+  return array.reduce((oldest, currentPerson) => {
+    const oldestAge = getAge(oldest);
+    const currentAge = getAge(currentPerson);
+    return oldestAge > currentAge ? oldest : currentPerson;
+  });
+};
+
+function getAge(person) {
+  if (!person.yearOfDeath) {
+    const currentYear = new Date().getFullYear();
+    return currentYear - person.yearOfBirth;
+  } else return person.yearOfDeath - person.yearOfBirth;
+}
+console.log(findTheOldest(people));
