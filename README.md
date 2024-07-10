@@ -600,6 +600,18 @@ Boolean(undefined);
 ✅**TRUTHY VALUES: These are values that turn into true values when converted into a boolean. Truthy values include strings that are not empty strings.**
 
 ```jsx
+📌**Conditional (ternary) operator:**
+
+The ternary operator is an alternative to the if….else statement. 
+
+It allows us to write the equivalent of the if…else statement all in one line of code.
+
+**Syntax** 
+
+```jsx
+age >= 18 ? 'can drink wine' : 'I like to drink water'; 
+condition ? if part : else part
+```
 Boolean('Jonathan'); /// Output(true)
 ```
 
