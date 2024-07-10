@@ -582,3 +582,25 @@ Is the process by which the JavaScript engine moves variable declarations to the
     📌 🗣Better option to If else statements
     
     </aside>
+**TRUTHY AND FALSY VALUES.**
+
+🚫**FALSY VALUES: These are values that are not false but are turned into false values when they are converted into a boolean.** 
+
+- undefined
+- 0
+- NaN
+- null
+- “ “
+
+```jsx
+Boolean(0); // Output(false)
+Boolean(undefined); 
+```
+
+✅**TRUTHY VALUES: These are values that turn into true values when converted into a boolean. Truthy values include strings that are not empty strings.**
+
+```jsx
+Boolean('Jonathan'); /// Output(true)
+```
+
+We use **Boolean Logic** when solving complex logical problems in JS. We then use operators like: ‘’And’’, ‘’Or’’ and ‘’Not’’
