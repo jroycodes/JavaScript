@@ -616,3 +616,73 @@ Boolean('Jonathan'); /// Output(true)
 ```
 
 We use **Boolean Logic** when solving complex logical problems in JS. We then use operators like: ‘’And’’, ‘’Or’’ and ‘’Not’’
+- **Loops**
+    
+    Loops are lines of code in JavaScript that allow us to repeat or execute a block of code a number of times.
+    
+    ***While Loop***.
+    
+    The `while` loop loops through a block of code as long as a specified condition is true. The `while` loop is very important because it allows us to iterate over a block of code even if we do not have a counter.
+    
+    ```jsx
+    //Iterate with JavaScript While Loops positive++
+    let i = 0;
+    while (i < 5) {
+      ourArray.push(i);
+      i++;
+    }
+    //Iterate with JavaScript While loop Negatively-- (descending)
+    let i = 5;
+    while (i > 0) {
+      myArray.push(i);
+      i--;
+    ```
+    
+    ***For Loop.***
+    
+    The `for` loop checks if the condition is true then it runs the code. It stops once the condition is completed. 
+    
+    ```jsx
+     //for (expression 1; expression 2(condition); expression 3) {
+      // code block to be executed
+    }
+    
+    for (let i = 0; i < years.length; i++) {
+        ages.push(2037 - years[i]);
+    }
+    ```
+    
+    ```jsx
+    // Looping arrays.
+    const years = [1991, 2007, 1969, 2020];
+    const ages = [];
+    
+    for (let i = 0; i < years.length; i++) {
+        ages.push(2037 - years[i]);
+    }
+    console.log(ages);
+    ```
+    
+    <aside>
+    🗣 For loops don't have to iterate one at a time. By changing our `final-expression`, we can count by even numbers.
+    
+    </aside>
+    
+    **Do...While Loop**
+    
+    It is called a `do...while`loop because it will first `do`one pass of the code inside the loop no matter what, and then continue to run the loop `while`the specified condition evaluates to `true`.
+    
+    ```jsx
+    const ourArray = [];
+    let i = 0;
+    
+    do {
+      ourArray.push(i);
+      i++;
+    } while (i < 5);
+    ```
+    
+    <aside>
+    🗣 Essentially, a `do...while` loop ensures that the code inside the loop will run at least once. Let's try getting a `do...while` loop to work by pushing values to an array.
+    
+    </aside>
