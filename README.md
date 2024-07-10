@@ -762,3 +762,78 @@ for (let i = 0; i < arr.length; i++) {
 // This outputs each sub-element in arr one at a time.
 // The inner loop checks the .length of arr[i], since arr[i] is itself an array.
 ```
+
+- **FUNCTIONS.**
+    
+    A function is a block of code that is designed to perform a specific task. ||  A function is a piece of program wrapped in a value.
+    
+     ***Functions are also defined as verbs or actions that instruct a computer on what to do.***
+    
+    <aside>
+    📌 **After creating the function and inputing the code block, its necessary to call or invoke the function.**
+    
+    </aside>
+    
+    ```jsx
+    function name(parameter1, parameter2, parameter3) {}
+      // code to be executed
+    // fuction reusableFunction(){
+    //console.log("Hello, World");
+    // Calling my reusableFunction 
+    reusableFunction();
+    ```
+    
+    ***Parameters: These are like variables that are specific only to this function.**  They are defined when the function is called or invoked.*
+    
+    **Returning a value.**
+    
+    We can pass values into a function with *arguments.* You can use a `return` statement to send a value back out of a function.
+    
+    **Function declaration :** Function declaration declares functions with a function keyword. The function declaration must contain the function name.
+    
+    <aside>
+    💡 **Function that can be used before its declared in the code.**
+    
+    </aside>
+    
+    ```jsx
+    function name(parameter1, parameter2, parameter3) {
+      // code to be executed
+    }
+    ```
+    
+    **Function expression** : A function expression is similar to the function declaration but without the function name. \Function expressions are rather stored in variables.
+    
+    <aside>
+    💡 **Essentially a function value that is stored in a variable.**
+    
+    </aside>
+    
+    ```jsx
+    const variableName = function() {
+    // code to be executed
+    }
+    ```
+    
+    **Arrow Functions :** An arrow function is a compact alternative to the traditional function expression. Its is shorter and much easier to write.
+    
+    <aside>
+    💡 **Great for a quick one-line function.**
+    
+    </aside>
+    
+    ```jsx
+    // In case of a single paremeter 
+    const variableName = parameter => function             
+    ```
+    
+    ```jsx
+    // In case of two paremeters
+    const variableName = (paremeter1, paremeter2) => function{
+    // code to be executed
+    ```
+    
+    <aside>
+    📌 **The “return" statement immediately exits the function.**
+    
+    </aside>
