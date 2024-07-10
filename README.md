@@ -616,6 +616,7 @@ Boolean('Jonathan'); /// Output(true)
 ```
 
 We use **Boolean Logic** when solving complex logical problems in JS. We then use operators like: ‘’And’’, ‘’Or’’ and ‘’Not’’
+
 - **Loops**
     
     Loops are lines of code in JavaScript that allow us to repeat or execute a block of code a number of times.
@@ -686,3 +687,78 @@ We use **Boolean Logic** when solving complex logical problems in JS. We then us
     🗣 Essentially, a `do...while` loop ensures that the code inside the loop will run at least once. Let's try getting a `do...while` loop to work by pushing values to an array.
     
     </aside>
+**Recursion.**
+
+Recursion is the concept that a function can be expressed in terms of itself.
+
+```jsx
+function multiply(arr, n) {
+    if (n <= 0) {
+      return 1;
+    } else {
+      return multiply(arr, n - 1) * arr[n - 1];
+    }
+  }
+// Same solution with for loop
+// function multiply(arr, n) {
+  //   let product = 1;
+  //   for (let i = 0; i < n; i++) {
+  //     product *= arr[i];
+  //   }
+  //   return product;
+  // }
+```
+
+[How to Understand Recursion in JavaScript](https://www.freecodecamp.org/news/understanding-recursion-in-javascript/)
+
+**Count Backwards With a For Loop :** 
+
+In order to decrement by two each iteration, we'll need to change our initialization, condition, and final expression.
+
+We'll start at `i = 10` and loop while `i > 0`. We'll decrement `i` by 2 each loop with `i -= 2`.
+
+```jsx
+const ourArray = [];
+
+for (let i = 10; i > 0; i -= 2) {
+  ourArray.push(i);
+}
+```
+
+**Continue :** *Exits the current iteration of a loop and continuing to the next one*.
+
+```jsx
+// Only elements of the array that are 'strings' will be returned.
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] !== 'string') continue;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+```
+
+**Break :** *Terminates the whole loop***.**
+
+```jsx
+// Only elements of the array that are 'numbers' will be returned.
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] === 'number') break;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+```
+
+**Nesting For Loops**
+
+```jsx
+const arr = [
+  [1, 2], [3, 4], [5, 6]
+];
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
+  }
+}
+// This outputs each sub-element in arr one at a time.
+// The inner loop checks the .length of arr[i], since arr[i] is itself an array.
+```
